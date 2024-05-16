@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <main>
+        <div class="conatiner">
+            <h2 class="title">To Do App</h2>
+            <form id="todoform">
+                <input id="searchInput" type="text"placeholder="Enter todo..." required>
+                <button id="submitBtn"type="submit">Add</button>
+            </form>
+            <ul id="productsList1">
+                
+                <!-- <li class="list-item">
+                    <p style="margin-right: auto; display: inline-block;">Lorem, ipsum dolor.</p>
+                    <i class="fa-regular fa-pen-to-square" style="color: rgb(223, 90, 19);"></i>
+                    <i class="fa-regular fa-trash-can" style="color: red;"></i>
+                </li> -->
+            </ul>
+            <modal id="modal" class="modal hidden" open="">
+                <form id="editForm">
+                    <input id="editInput" type="text"placeholder="Enter todo..." required>
+                    <button id="editBtn"type="submit">Edit</button>
+                </form>
+            </modal>
+            <div id="overlay" class="overlay hidden"></div>
+        </div>
+   </main>
+    <script src="./app.js"></script>
+</body>
+</html>
